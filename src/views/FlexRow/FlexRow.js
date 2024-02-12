@@ -40,7 +40,7 @@ function FlexRow() {
                   </ul>
               </div>
               <div className="demo-property">
-                  <h3>justify-content</h3>
+                  <h3>justify-content (Main axis)</h3>
                   <ul>
                       <li>flex-start</li>
                       <li>flex-end</li>
@@ -52,7 +52,7 @@ function FlexRow() {
                   </ul>
               </div>
               <div className="demo-property">
-                  <h3>align-items</h3>
+                  <h3>align-items (Cross axis)</h3>
                   <ul>
                       <li>flex-start</li>
                       <li>flex-end</li>
@@ -61,10 +61,30 @@ function FlexRow() {
                       <li>baseline</li>
                   </ul>
               </div>
+              <div className="demo-property">
+                  <h3>flex-grow</h3>
+                  <ul>
+                      <li>Defines the ability of flex item to grow (default: 0)</li>
+                  </ul>
+              </div>
+              <div className="demo-property">
+                  <h3>flex-shrink</h3>
+                  <ul>
+                      <li>Defines the ability of flex item to shrink (default: 1)</li>
+                  </ul>
+              </div>
+              <div className="demo-property">
+                  <h3>flex-basis</h3>
+                  <ul>
+                      <li>Defines the default size of an element (default: auto)</li>
+                  </ul>
+              </div>
           </div>
           <div className="demo-links">
-              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noreferrer">A Complete Guide to Flexbox</a>
-              <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank" rel="noreferrer">MDN Web Docs</a>
+              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noreferrer">A
+                  Complete Guide to Flexbox</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank"
+                 rel="noreferrer">MDN Web Docs</a>
               <a href="https://flexboxfroggy.com/" target="_blank" rel="noreferrer">Flexbox Froggy</a>
               <a href="https://www.flexboxpatterns.com/" target="_blank" rel="noreferrer">Flexbox Patterns</a>
           </div>

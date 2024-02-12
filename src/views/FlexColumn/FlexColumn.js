@@ -40,7 +40,7 @@ function FlexColumn() {
                     </ul>
                 </div>
                 <div className="demo-property">
-                    <h3>justify-content</h3>
+                    <h3>justify-content (Main axis)</h3>
                     <ul>
                         <li>flex-start</li>
                         <li>flex-end</li>
@@ -52,13 +52,31 @@ function FlexColumn() {
                     </ul>
                 </div>
                 <div className="demo-property">
-                    <h3>align-items</h3>
+                    <h3>align-items (Cross axis)</h3>
                     <ul>
                         <li>flex-start</li>
                         <li>flex-end</li>
                         <li>center</li>
                         <li>stretch</li>
                         <li>baseline</li>
+                    </ul>
+                </div>
+                <div className="demo-property">
+                    <h3>flex-grow</h3>
+                    <ul>
+                        <li>Defines the ability of flex item to grow (default: 0)</li>
+                    </ul>
+                </div>
+                <div className="demo-property">
+                    <h3>flex-shrink</h3>
+                    <ul>
+                        <li>Defines the ability of flex item to shrink (default: 1)</li>
+                    </ul>
+                </div>
+                <div className="demo-property">
+                    <h3>flex-basis</h3>
+                    <ul>
+                        <li>Defines the default size of an element (default: auto)</li>
                     </ul>
                 </div>
             </div>
