@@ -1,0 +1,71 @@
+.demo-reset {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.demo-unset {
+  all: unset;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color:#fff;
+  background: #555;
+  box-shadow: #000 2px 2px 5px;
+  user-select: none;
+
+  &:hover {
+    background: #000;
+  }
+  &:focus {
+    outline: revert;
+  }
+  &:active {
+    background: #04aa6d;
+  }
+}
+
+.demo-p {
+  width: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  color: orange;
+  padding: 10px;
+  border: 1px solid #000;
+
+  p {
+    color: green;
+    margin: 0;
+    padding: 5px 20px;
+    border: 5px solid currentColor;
+  }
+  p.inherit {
+    color: inherit;
+  }
+  p.initial {
+    color: initial;
+  }
+  p.unset {
+    color: unset;
+  }
+  p.revert {
+    color: revert;
+  }
+}
+
+.demo-box-sizing {
+    width: 200px;
+    padding: 20px;
+    background: linear-gradient(-45deg, #66cdaa, #fffacd);
+    text-align: center;
+  &-border-box {
+    box-sizing: border-box;
+  }
+  &-initial {
+    box-sizing: initial;
+  }
+}

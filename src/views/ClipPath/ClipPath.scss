@@ -1,0 +1,10 @@
+.demo-clip-path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-clip-path-image {
+  width: 300px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}

@@ -1,0 +1,22 @@
+.container.demo-flex-col {
+  height: 500px;
+}
+
+.demo-flex-col {
+  display: flex; // flex | inline-flex
+  flex-flow: column nowrap; // row | row-reverse | column | column-reverse; nowrap | wrap | wrap-reverse
+  justify-content: flex-start; // start | end | center | space-between | space-around | space-evenly
+  align-items: stretch; // stretch | start | end | center | baseline
+  gap: 20px;
+
+  .demo-flex-col__item {
+    background: linear-gradient(-45deg, #66cdaa, #fffacd);
+    border: none;
+    height: 100px;
+  }
+  .demo-flex-col__wide-item {
+    background: linear-gradient(-45deg, #66cdaa, #fffacd);
+    border: none;
+    flex: 1 0 100px; // grow, shrink, basis
+  }
+}

@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: Verdana, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  width: 70%;
+  min-width: 400px;
+  min-height: 300px;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+.demo-properties {
+  width: 70%;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+  .demo-property {
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    h3 {
+      margin: 0 0 5px 0;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px 10px;
+    }
+  }
+}
+
+.demo-links {
+  width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  a {
+    color: #fff;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,29 @@
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+  gap: 10px; // row gap, column gap
+  justify-items: stretch; // start | end | center | stretch
+  align-items: stretch; // start | end | center | stretch | baseline
+}
+
+.demo-grid__item {
+  background: linear-gradient(-45deg, #66cdaa, #fffacd);
+  &-header {
+    grid-area: header;
+  }
+  &-sidebar {
+    grid-area: sidebar;
+  }
+  &-main {
+    grid-area: main;
+  }
+  &-footer {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+  }
+}
